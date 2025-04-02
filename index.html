@@ -1,94 +1,75 @@
- <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Animal Reveal</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
-      </head>
-      <body>
-        <div class="main-container">
-          <div class="welcome-box">
-            <p>Welcome to the Interactive Reveal What’s That Animal UI</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Reveal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="welcome-box">
+        <p>Welcome to the Interactive Reveal What’s That Animal UI</p>
+      </div>
+
+      <div class="instruction-box">
+        <p>Click the image to reveal the animal</p>
+      </div>
+
+      <div class="images-container">
+        <div class="image-wrapper">
+          <div class="image-box">
+            <img
+              id="catImage"
+              src="images/tabby-cat.jpg"
+              class="animal-img hidden"
+            />
+            <div class="button-box">
+              <button class="hide-btn hidden" onclick="hideImage('catImage')">
+                Hide Result
+              </button>
+            </div>
           </div>
-
-          <div class="instruction-box">
-            <p>Click the image to reveal the animal</p>
-          </div>
-
-          <div class="images-container">
-            <div class="image-wrapper">
-              <div class="image-box">
-                <img
-                  id="catImage"
-                  src="images/tabby-cat.jpg"
-                  class="animal-img hidden"
-                />
-                <div class="button-box">
-                  <button
-                    class="hide-btn hidden"
-                    onclick="hideImage('catImage')"
-                  >
-                    Hide Result
-                  </button>
-                </div>
-              </div>
-              <div class="button-box reveal-box">
-                <button class="reveal-btn" onclick="revealImage('catImage')">
-                  Reveal CAT
-                </button>
-              </div>
-            </div>
-
-            <div class="image-wrapper">
-              <div class="image-box">
-                <img
-                  id="dogImage"
-                  src="images/dog.jpg"
-                  class="animal-img hidden"
-                />
-                <div class="button-box">
-                  <button
-                    class="hide-btn hidden"
-                    onclick="hideImage('dogImage')"
-                  >
-                    Hide Result
-                  </button>
-                </div>
-              </div>
-              <div class="button-box reveal-box">
-                <button class="reveal-btn" onclick="revealImage('dogImage')">
-                  Reveal DOG
-                </button>
-              </div>
-            </div>
-
-            <div class="image-wrapper">
-              <div class="image-box">
-                <img
-                  id="cowImage"
-                  src="images/cow.jpg"
-                  class="animal-img hidden"
-                />
-                <div class="button-box">
-                  <button
-                    class="hide-btn hidden"
-                    onclick="hideImage('cowImage')"
-                  >
-                    Hide Result
-                  </button>
-                </div>
-              </div>
-              <div class="button-box reveal-box">
-                <button class="reveal-btn" onclick="revealImage('cowImage')">
-                  Reveal COW
-                </button>
-              </div>
-            </div>
+          <div class="button-box reveal-box">
+            <button class="reveal-btn" onclick="revealImage('catImage')">
+              Reveal CAT
+            </button>
           </div>
         </div>
-      </body>
-    </html>
+
+        <div class="image-wrapper">
+          <div class="image-box">
+            <img id="dogImage" src="images/dog.jpg" class="animal-img hidden" />
+            <div class="button-box">
+              <button class="hide-btn hidden" onclick="hideImage('dogImage')">
+                Hide Result
+              </button>
+            </div>
+          </div>
+          <div class="button-box reveal-box">
+            <button class="reveal-btn" onclick="revealImage('dogImage')">
+              Reveal DOG
+            </button>
+          </div>
+        </div>
+
+        <div class="image-wrapper">
+          <div class="image-box">
+            <img id="cowImage" src="images/cow.jpg" class="animal-img hidden" />
+            <div class="button-box">
+              <button class="hide-btn hidden" onclick="hideImage('cowImage')">
+                Hide Result
+              </button>
+            </div>
+          </div>
+          <div class="button-box reveal-box">
+            <button class="reveal-btn" onclick="revealImage('cowImage')">
+              Reveal COW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
